@@ -1,0 +1,21 @@
+@start = sentence+ ;
+sentence = selectors '{' ruleset '}' ;
+
+selectors = selector commaSelector* ;
+commaSelector = ',' selector ;
+
+selector = classSelector;
+typeSelector = identifier ;
+classSelector = '.' identifier ;
+idSelector = '#' identifier ;
+identifier = Word;
+
+ruleset = rule* ;
+rule = property ':' value semi ;
+property = Word ;
+value = string | const;
+
+string = QuotedString;
+const = Word;
+
+semi = ';';
