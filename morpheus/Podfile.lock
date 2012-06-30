@@ -1,5 +1,7 @@
 PODS:
   - DCIntrospect (0.0.1)
+  - ParseKit (0.0.2)
 
 DEPENDENCIES:
   - DCIntrospect
+  - ParseKit
