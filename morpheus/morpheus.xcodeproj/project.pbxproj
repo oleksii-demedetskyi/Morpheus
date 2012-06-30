@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8244DAF2159F2CC3001722AD /* stylesheets.bundle */; };
 		8272800C159F1B1500A76A55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800B159F1B1500A76A55 /* UIKit.framework */; };
 		8272800E159F1B1500A76A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800D159F1B1500A76A55 /* Foundation.framework */; };
 		82728010159F1B1500A76A55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800F159F1B1500A76A55 /* CoreGraphics.framework */; };
 		82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82728014159F1B1500A76A55 /* InfoPlist.strings */; };
 		82728018159F1B1500A76A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82728017159F1B1500A76A55 /* main.m */; };
 		8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8272801B159F1B1500A76A55 /* DBAppDelegate.m */; };
-		86790413159F4B8A009747D3 /* example.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86790412159F4B8A009747D3 /* example.xib */; };
-		86790416159F5783009747D3 /* css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = 86790414159F5783009747D3 /* css.grammar */; };
-		86790417159F5783009747D3 /* example.css in Resources */ = {isa = PBXBuildFile; fileRef = 86790415159F5783009747D3 /* example.css */; };
+		82975048159F45700009ED89 /* DBFileGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975047159F45700009ED89 /* DBFileGuard.m */; };
 		D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF3D07A1BB44D29889FE868 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BF3D07A1BB44D29889FE868 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDF157089D748C39F564C0F /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stylesheets.bundle; sourceTree = SOURCE_ROOT; };
 		82728007159F1B1500A76A55 /* morpheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morpheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272800B159F1B1500A76A55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8272800D159F1B1500A76A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,9 +32,9 @@
 		82728019159F1B1500A76A55 /* morpheus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "morpheus-Prefix.pch"; sourceTree = "<group>"; };
 		8272801A159F1B1500A76A55 /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
 		8272801B159F1B1500A76A55 /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
-		86790412159F4B8A009747D3 /* example.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = example.xib; sourceTree = "<group>"; };
-		86790414159F5783009747D3 /* css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css.grammar; sourceTree = "<group>"; };
-		86790415159F5783009747D3 /* example.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = example.css; sourceTree = "<group>"; };
+		82975046159F45700009ED89 /* DBFileGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileGuard.h; sourceTree = "<group>"; };
+		82975047159F45700009ED89 /* DBFileGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileGuard.m; sourceTree = "<group>"; };
+		82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBFileGuardWorkspaceConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,6 @@
 		82727FFC159F1B1400A76A55 = {
 			isa = PBXGroup;
 			children = (
-				86790410159F29A7009747D3 /* css */,
 				82728011159F1B1500A76A55 /* morpheus */,
 				8272800A159F1B1500A76A55 /* Frameworks */,
 				82728008159F1B1500A76A55 /* Products */,
@@ -87,6 +86,10 @@
 			children = (
 				8272801A159F1B1500A76A55 /* DBAppDelegate.h */,
 				8272801B159F1B1500A76A55 /* DBAppDelegate.m */,
+				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
+				82975046159F45700009ED89 /* DBFileGuard.h */,
+				82975047159F45700009ED89 /* DBFileGuard.m */,
+				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
 				82728012159F1B1500A76A55 /* Supporting Files */,
 			);
 			path = morpheus;
@@ -103,16 +106,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		86790410159F29A7009747D3 /* css */ = {
-			isa = PBXGroup;
-			children = (
-				86790414159F5783009747D3 /* css.grammar */,
-				86790415159F5783009747D3 /* example.css */,
-				86790412159F4B8A009747D3 /* example.xib */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8272801F159F1B1500A76A55 /* Build configuration list for PBXNativeTarget "morpheus" */;
 			buildPhases = (
+				82975044159F425F0009ED89 /* ShellScript */,
 				82728003159F1B1500A76A55 /* Sources */,
 				82728004159F1B1500A76A55 /* Frameworks */,
 				82728005159F1B1500A76A55 /* Resources */,
@@ -166,15 +160,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */,
-				86790413159F4B8A009747D3 /* example.xib in Resources */,
-				86790416159F5783009747D3 /* css.grammar in Resources */,
-				86790417159F5783009747D3 /* example.css in Resources */,
+				8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		82975044159F425F0009ED89 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Save styles bundle path somewhere";
+		};
 		B7BAEC13145448EFB57B8C36 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +203,7 @@
 			files = (
 				82728018159F1B1500A76A55 /* main.m in Sources */,
 				8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */,
+				82975048159F45700009ED89 /* DBFileGuard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

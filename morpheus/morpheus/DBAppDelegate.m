@@ -7,7 +7,7 @@
 //
 
 #import "DBAppDelegate.h"
-#import "ParseKit.h"
+#import "DBFileWorker.h"
 
 @implementation DBAppDelegate
 
@@ -15,34 +15,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DBFileWorker* worker = [[DBFileWorker alloc] init];
+    [worker testReadWriteCallbacks];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    NSString* grammarPath = [[NSBundle mainBundle] pathForResource:@"css" ofType:@"grammar"];
-    NSString* grammar = [NSString stringWithContentsOfFile:grammarPath 
-                                                  encoding:NSUTF8StringEncoding 
-                                                     error:NULL];
-    
-    PKParser *parser = nil;
-    parser = [[PKParserFactory factory] parserFromGrammar:grammar assembler:self];
-    
-    NSString *s = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"example" 
-                                                                                     ofType:@"css"] 
-                                            encoding:NSUTF8StringEncoding 
-                                               error:NULL];
-    id object = [parser parse:s];
-    NSLog(@"Parsed: %@",object);
-    
     return YES;
 }
-
-- (void)parser:(PKParser*)parser didMatchSentence:(PKAssembly*)sentence
-{
-    NSLog(@"%@",sentence);
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
