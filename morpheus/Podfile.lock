@@ -1,0 +1,5 @@
+PODS:
+  - DCIntrospect (0.0.1)
+
+DEPENDENCIES:
+  - DCIntrospect
