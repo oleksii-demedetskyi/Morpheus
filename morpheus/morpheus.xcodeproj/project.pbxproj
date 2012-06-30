@@ -15,6 +15,9 @@
 		82728018159F1B1500A76A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82728017159F1B1500A76A55 /* main.m */; };
 		8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8272801B159F1B1500A76A55 /* DBAppDelegate.m */; };
 		82975048159F45700009ED89 /* DBFileGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975047159F45700009ED89 /* DBFileGuard.m */; };
+		8297504C159F7DC90009ED89 /* DBViewRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297504B159F7DC90009ED89 /* DBViewRepository.m */; };
+		8297504F159F82500009ED89 /* DBDeallocHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297504E159F82500009ED89 /* DBDeallocHandler.m */; };
+		82975052159F84660009ED89 /* UIView+Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975051159F84660009ED89 /* UIView+Repository.m */; };
 		D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF3D07A1BB44D29889FE868 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,12 @@
 		82975046159F45700009ED89 /* DBFileGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileGuard.h; sourceTree = "<group>"; };
 		82975047159F45700009ED89 /* DBFileGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileGuard.m; sourceTree = "<group>"; };
 		82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBFileGuardWorkspaceConstant.h; sourceTree = "<group>"; };
+		8297504A159F7DC90009ED89 /* DBViewRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewRepository.h; sourceTree = "<group>"; };
+		8297504B159F7DC90009ED89 /* DBViewRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewRepository.m; sourceTree = "<group>"; };
+		8297504D159F82500009ED89 /* DBDeallocHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDeallocHandler.h; sourceTree = "<group>"; };
+		8297504E159F82500009ED89 /* DBDeallocHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDeallocHandler.m; sourceTree = "<group>"; };
+		82975050159F84660009ED89 /* UIView+Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Repository.h"; sourceTree = "<group>"; };
+		82975051159F84660009ED89 /* UIView+Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Repository.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,12 @@
 				8272801A159F1B1500A76A55 /* DBAppDelegate.h */,
 				8272801B159F1B1500A76A55 /* DBAppDelegate.m */,
 				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
+				8297504A159F7DC90009ED89 /* DBViewRepository.h */,
+				8297504B159F7DC90009ED89 /* DBViewRepository.m */,
+				8297504D159F82500009ED89 /* DBDeallocHandler.h */,
+				8297504E159F82500009ED89 /* DBDeallocHandler.m */,
+				82975050159F84660009ED89 /* UIView+Repository.h */,
+				82975051159F84660009ED89 /* UIView+Repository.m */,
 				82975046159F45700009ED89 /* DBFileGuard.h */,
 				82975047159F45700009ED89 /* DBFileGuard.m */,
 				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
@@ -204,6 +219,9 @@
 				82728018159F1B1500A76A55 /* main.m in Sources */,
 				8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */,
 				82975048159F45700009ED89 /* DBFileGuard.m in Sources */,
+				8297504C159F7DC90009ED89 /* DBViewRepository.m in Sources */,
+				8297504F159F82500009ED89 /* DBDeallocHandler.m in Sources */,
+				82975052159F84660009ED89 /* UIView+Repository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

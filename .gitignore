@@ -11,3 +11,4 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+DBFileGuardWorkspaceConstant.h

@@ -7,7 +7,6 @@
 //
 
 #import "DBAppDelegate.h"
-#import "DBFileWorker.h"
 
 @implementation DBAppDelegate
 
@@ -15,9 +14,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    DBFileWorker* worker = [[DBFileWorker alloc] init];
-    [worker testReadWriteCallbacks];
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
