@@ -14,12 +14,16 @@
 
 @interface DBViewRepository ()
 
-@property (nonatomic, strong) NSMutableDictionary* viewCollection;
+@property (nonatomic, strong) NSMutableDictionary* typeCollection;
+@property (nonatomic, strong) NSMutableDictionary* classesCollection;
+@property (nonatomic, strong) NSMutableDictionary* identifierCollection;
 
 @end
 
 @implementation DBViewRepository
-@synthesize viewCollection;
+@synthesize typeCollection;
+@synthesize classesCollection;
+@synthesize identifierCollection;
 
 +(id)sharedRepository
 {
@@ -27,7 +31,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         repository = [[DBViewRepository alloc] init];
-        repository.viewCollection = [NSMutableDictionary dictionary];
+        repository.typeCollection = [NSMutableDictionary dictionary];
     });
     return repository;
 }
@@ -43,18 +47,43 @@
     return (__bridge NSMutableSet*)(CFSetCreateMutable(0, 0, &callbacks));
 }
 
+#pragma mark - Support methods
 
--(NSMutableSet *)setOfViewsForClass:(Class) class
+-(NSMutableSet *)setOfIdentifierViewsForIdentifier:(NSString *)identifier
 {
-    NSString *viewClass = NSStringFromClass(class);
-    NSMutableSet* classViews = [self.viewCollection objectForKey:viewClass];
-    if(classViews == nil)
+    NSMutableSet* identifierViews = [self.identifierCollection objectForKey:identifier];
+    if (identifierViews == nil)
+    {
+        identifierViews = [self weakSet];
+        [self.identifierCollection setObject:identifierViews forKey:identifier];
+    }
+    return identifierViews;
+}
+
+-(NSMutableSet *)setOfClassViewsForClassName:(NSString *)className
+{
+    NSMutableSet* classViews = [self.classesCollection objectForKey:className];
+    if (classViews == nil) 
     {
         classViews = [self weakSet];
-        [self.viewCollection setObject:classViews forKey:viewClass];
+        [self.classesCollection setObject:classViews forKey:className];
     }
     return classViews;
 }
+
+-(NSMutableSet *)setOfTypeViewsForClass:(Class) class
+{
+    NSString *viewClass = NSStringFromClass(class);
+    NSMutableSet* typeViews = [self.typeCollection objectForKey:viewClass];
+    if(typeViews == nil)
+    {
+        typeViews = [self weakSet];
+        [self.typeCollection setObject:typeViews forKey:viewClass];
+    }
+    return typeViews;
+}
+
+#pragma mark - Swizzling :)
 
 void Swizzle(Class c, SEL orig, SEL new)
 {
@@ -70,7 +99,19 @@ void Swizzle(Class c, SEL orig, SEL new)
 
 -(void)addView:(UIView *)view
 {
-    NSMutableSet* classViews = [self setOfViewsForClass:[view class]];
+    [view.classes enumerateObjectsUsingBlock:^(id obj, BOOL *stop) 
+     {
+         NSMutableSet* classViews = [self setOfClassViewsForClassName:obj];
+         [classViews addObject:view];
+     }];
+    
+    if (view.identifier != nil)
+    {
+        NSMutableSet* identifierViews = [self setOfIdentifierViewsForIdentifier:view.identifier];
+        [identifierViews addObject:view];
+    }
+
+    NSMutableSet* classViews = [self setOfTypeViewsForClass:[view class]];
     
     if (![classViews containsObject:view]) 
     {
@@ -84,7 +125,22 @@ void Swizzle(Class c, SEL orig, SEL new)
 
 -(void)removeView:(UIView *)view
 {
-    NSMutableSet* classViews = [self setOfViewsForClass:[view class]];
+    NSMutableSet* typeViews = [self setOfTypeViewsForClass:[view class]];
+    [typeViews removeObject:view];
+    
+    [view.classes enumerateObjectsUsingBlock:^(id obj, BOOL *stop) 
+    {
+        NSMutableSet* classViews = [self setOfClassViewsForClassName:obj];
+        [classViews removeObject:view];
+    }];
+    
+    NSMutableSet* identifierViews = [self setOfIdentifierViewsForIdentifier:view.identifier];
+    [identifierViews removeObject:view];
+}
+
+-(void)removeView:(UIView *)view fromClass:(NSString *)aClass
+{
+    NSMutableSet* classViews = [self setOfClassViewsForClassName:aClass];
     [classViews removeObject:view];
 }
 

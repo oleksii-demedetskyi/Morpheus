@@ -13,5 +13,6 @@
 +(id)sharedRepository;
 -(void)addView:(UIView *)view;
 -(void)removeView:(UIView *)view;
+-(void)removeView:(UIView *)view fromClass:(NSString *)aClass;
 
 @end

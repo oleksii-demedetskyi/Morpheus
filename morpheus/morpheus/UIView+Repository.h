@@ -11,6 +11,11 @@
 @class DBDeallocHandler;
 @interface UIView (Repository)
 
+@property(nonatomic, strong) NSString* identifier;
+@property(nonatomic, readonly) NSMutableSet* classes;
+
+- (void)addClass:(NSString *)className;
+- (void)removeClass:(NSString *)className;
 - (DBDeallocHandler*)onDealloc:(void(^)(UIView* view))deallocHandler;
 
 @end
