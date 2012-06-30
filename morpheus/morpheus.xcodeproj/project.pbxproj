@@ -1,609 +1,325 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1BF3D07A1BB44D29889FE868</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3CDF157089D748C39F564C0F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>82727FFC159F1B1400A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>82728011159F1B1500A76A55</string>
-				<string>8272800A159F1B1500A76A55</string>
-				<string>82728008159F1B1500A76A55</string>
-				<string>3CDF157089D748C39F564C0F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82727FFE159F1B1400A76A55</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>DB</string>
-				<key>LastUpgradeCheck</key>
-				<string>0430</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>82728001159F1B1400A76A55</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>82727FFC159F1B1400A76A55</string>
-			<key>productRefGroup</key>
-			<string>82728008159F1B1500A76A55</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>82728006159F1B1500A76A55</string>
-			</array>
-		</dict>
-		<key>82728001159F1B1400A76A55</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8272801D159F1B1500A76A55</string>
-				<string>8272801E159F1B1500A76A55</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>82728003159F1B1500A76A55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>82728018159F1B1500A76A55</string>
-				<string>8272801C159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>82728004159F1B1500A76A55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8272800C159F1B1500A76A55</string>
-				<string>8272800E159F1B1500A76A55</string>
-				<string>82728010159F1B1500A76A55</string>
-				<string>D0947E97FDC34F7ABD053483</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>82728005159F1B1500A76A55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>82728016159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>82728006159F1B1500A76A55</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8272801F159F1B1500A76A55</string>
-			<key>buildPhases</key>
-			<array>
-				<string>82728003159F1B1500A76A55</string>
-				<string>82728004159F1B1500A76A55</string>
-				<string>82728005159F1B1500A76A55</string>
-				<string>B7BAEC13145448EFB57B8C36</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>morpheus</string>
-			<key>productName</key>
-			<string>morpheus</string>
-			<key>productReference</key>
-			<string>82728007159F1B1500A76A55</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>82728007159F1B1500A76A55</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>morpheus.app</string>
-			<key>path</key>
-			<string>morpheus.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>82728008159F1B1500A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>82728007159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8272800A159F1B1500A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8272800B159F1B1500A76A55</string>
-				<string>8272800D159F1B1500A76A55</string>
-				<string>8272800F159F1B1500A76A55</string>
-				<string>1BF3D07A1BB44D29889FE868</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8272800B159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8272800C159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8272800B159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8272800D159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8272800E159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8272800D159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8272800F159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>82728010159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8272800F159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>82728011159F1B1500A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8272801A159F1B1500A76A55</string>
-				<string>8272801B159F1B1500A76A55</string>
-				<string>82728012159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>morpheus</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728012159F1B1500A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>82728013159F1B1500A76A55</string>
-				<string>82728014159F1B1500A76A55</string>
-				<string>82728017159F1B1500A76A55</string>
-				<string>82728019159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728013159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>morpheus-Info.plist</string>
-			<key>path</key>
-			<string>morpheus-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728014159F1B1500A76A55</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>82728015159F1B1500A76A55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728015159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728016159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>82728014159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>82728017159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>main.m</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82728018159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>82728017159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>82728019159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>morpheus-Prefix.pch</string>
-			<key>path</key>
-			<string>morpheus-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8272801A159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBAppDelegate.h</string>
-			<key>path</key>
-			<string>DBAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8272801B159F1B1500A76A55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DBAppDelegate.m</string>
-			<key>path</key>
-			<string>DBAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8272801C159F1B1500A76A55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8272801B159F1B1500A76A55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8272801D159F1B1500A76A55</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8272801E159F1B1500A76A55</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.1</string>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8272801F159F1B1500A76A55</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>82728020159F1B1500A76A55</string>
-				<string>82728021159F1B1500A76A55</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>82728020159F1B1500A76A55</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3CDF157089D748C39F564C0F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>morpheus/morpheus-Prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>morpheus/morpheus-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>82728021159F1B1500A76A55</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3CDF157089D748C39F564C0F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>morpheus/morpheus-Prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>morpheus/morpheus-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B7BAEC13145448EFB57B8C36</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-		</dict>
-		<key>D0947E97FDC34F7ABD053483</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1BF3D07A1BB44D29889FE868</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>82727FFE159F1B1400A76A55</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8244DAF2159F2CC3001722AD /* stylesheets.bundle */; };
+		8272800C159F1B1500A76A55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800B159F1B1500A76A55 /* UIKit.framework */; };
+		8272800E159F1B1500A76A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800D159F1B1500A76A55 /* Foundation.framework */; };
+		82728010159F1B1500A76A55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800F159F1B1500A76A55 /* CoreGraphics.framework */; };
+		82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82728014159F1B1500A76A55 /* InfoPlist.strings */; };
+		82728018159F1B1500A76A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82728017159F1B1500A76A55 /* main.m */; };
+		8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8272801B159F1B1500A76A55 /* DBAppDelegate.m */; };
+		82975048159F45700009ED89 /* DBFileGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975047159F45700009ED89 /* DBFileGuard.m */; };
+		D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF3D07A1BB44D29889FE868 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BF3D07A1BB44D29889FE868 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDF157089D748C39F564C0F /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stylesheets.bundle; sourceTree = SOURCE_ROOT; };
+		82728007159F1B1500A76A55 /* morpheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morpheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8272800B159F1B1500A76A55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8272800D159F1B1500A76A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8272800F159F1B1500A76A55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82728013159F1B1500A76A55 /* morpheus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "morpheus-Info.plist"; sourceTree = "<group>"; };
+		82728015159F1B1500A76A55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82728017159F1B1500A76A55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82728019159F1B1500A76A55 /* morpheus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "morpheus-Prefix.pch"; sourceTree = "<group>"; };
+		8272801A159F1B1500A76A55 /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
+		8272801B159F1B1500A76A55 /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
+		82975046159F45700009ED89 /* DBFileGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileGuard.h; sourceTree = "<group>"; };
+		82975047159F45700009ED89 /* DBFileGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileGuard.m; sourceTree = "<group>"; };
+		82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBFileGuardWorkspaceConstant.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82728004159F1B1500A76A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8272800C159F1B1500A76A55 /* UIKit.framework in Frameworks */,
+				8272800E159F1B1500A76A55 /* Foundation.framework in Frameworks */,
+				82728010159F1B1500A76A55 /* CoreGraphics.framework in Frameworks */,
+				D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82727FFC159F1B1400A76A55 = {
+			isa = PBXGroup;
+			children = (
+				82728011159F1B1500A76A55 /* morpheus */,
+				8272800A159F1B1500A76A55 /* Frameworks */,
+				82728008159F1B1500A76A55 /* Products */,
+				3CDF157089D748C39F564C0F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		82728008159F1B1500A76A55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82728007159F1B1500A76A55 /* morpheus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8272800A159F1B1500A76A55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8272800B159F1B1500A76A55 /* UIKit.framework */,
+				8272800D159F1B1500A76A55 /* Foundation.framework */,
+				8272800F159F1B1500A76A55 /* CoreGraphics.framework */,
+				1BF3D07A1BB44D29889FE868 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82728011159F1B1500A76A55 /* morpheus */ = {
+			isa = PBXGroup;
+			children = (
+				8272801A159F1B1500A76A55 /* DBAppDelegate.h */,
+				8272801B159F1B1500A76A55 /* DBAppDelegate.m */,
+				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
+				82975046159F45700009ED89 /* DBFileGuard.h */,
+				82975047159F45700009ED89 /* DBFileGuard.m */,
+				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
+				82728012159F1B1500A76A55 /* Supporting Files */,
+			);
+			path = morpheus;
+			sourceTree = "<group>";
+		};
+		82728012159F1B1500A76A55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82728013159F1B1500A76A55 /* morpheus-Info.plist */,
+				82728014159F1B1500A76A55 /* InfoPlist.strings */,
+				82728017159F1B1500A76A55 /* main.m */,
+				82728019159F1B1500A76A55 /* morpheus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82728006159F1B1500A76A55 /* morpheus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8272801F159F1B1500A76A55 /* Build configuration list for PBXNativeTarget "morpheus" */;
+			buildPhases = (
+				82975044159F425F0009ED89 /* ShellScript */,
+				82728003159F1B1500A76A55 /* Sources */,
+				82728004159F1B1500A76A55 /* Frameworks */,
+				82728005159F1B1500A76A55 /* Resources */,
+				B7BAEC13145448EFB57B8C36 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = morpheus;
+			productName = morpheus;
+			productReference = 82728007159F1B1500A76A55 /* morpheus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82727FFE159F1B1400A76A55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 82728001159F1B1400A76A55 /* Build configuration list for PBXProject "morpheus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82727FFC159F1B1400A76A55;
+			productRefGroup = 82728008159F1B1500A76A55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82728006159F1B1500A76A55 /* morpheus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82728005159F1B1500A76A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */,
+				8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82975044159F425F0009ED89 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Save styles bundle path somewhere";
+		};
+		B7BAEC13145448EFB57B8C36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82728003159F1B1500A76A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82728018159F1B1500A76A55 /* main.m in Sources */,
+				8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */,
+				82975048159F45700009ED89 /* DBFileGuard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82728014159F1B1500A76A55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82728015159F1B1500A76A55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8272801D159F1B1500A76A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8272801E159F1B1500A76A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82728020159F1B1500A76A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDF157089D748C39F564C0F /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morpheus/morpheus-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "morpheus/morpheus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82728021159F1B1500A76A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDF157089D748C39F564C0F /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morpheus/morpheus-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "morpheus/morpheus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82728001159F1B1400A76A55 /* Build configuration list for PBXProject "morpheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8272801D159F1B1500A76A55 /* Debug */,
+				8272801E159F1B1500A76A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8272801F159F1B1500A76A55 /* Build configuration list for PBXNativeTarget "morpheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82728020159F1B1500A76A55 /* Debug */,
+				82728021159F1B1500A76A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82727FFE159F1B1400A76A55 /* Project object */;
+}
