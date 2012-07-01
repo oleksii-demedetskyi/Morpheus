@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class DBLoginViewController;
 @interface DBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) DBLoginViewController* loginController;
 
 @end

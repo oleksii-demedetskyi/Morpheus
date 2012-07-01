@@ -2,3 +2,4 @@ platform :ios
 
 dependency 'DCIntrospect'
 dependency 'ParseKit'
+dependency 'ATMHud'

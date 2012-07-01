@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8244DAF2159F2CC3001722AD /* stylesheets.bundle */; };
+		82634C96159FC71E002E826C /* DBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82634C94159FC71E002E826C /* DBLoginViewController.m */; };
+		82634C97159FC71E002E826C /* DBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82634C95159FC71E002E826C /* DBLoginViewController.xib */; };
+		82634C9B159FCAB7002E826C /* DBAchievementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82634C99159FCAB7002E826C /* DBAchievementListViewController.m */; };
+		82634C9C159FCAB7002E826C /* DBAchievementListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82634C9A159FCAB7002E826C /* DBAchievementListViewController.xib */; };
 		8272800C159F1B1500A76A55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800B159F1B1500A76A55 /* UIKit.framework */; };
 		8272800E159F1B1500A76A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800D159F1B1500A76A55 /* Foundation.framework */; };
 		82728010159F1B1500A76A55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8272800F159F1B1500A76A55 /* CoreGraphics.framework */; };
@@ -25,6 +29,12 @@
 		1BF3D07A1BB44D29889FE868 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDF157089D748C39F564C0F /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stylesheets.bundle; sourceTree = SOURCE_ROOT; };
+		82634C93159FC71E002E826C /* DBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoginViewController.h; sourceTree = "<group>"; };
+		82634C94159FC71E002E826C /* DBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoginViewController.m; sourceTree = "<group>"; };
+		82634C95159FC71E002E826C /* DBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBLoginViewController.xib; sourceTree = "<group>"; };
+		82634C98159FCAB7002E826C /* DBAchievementListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAchievementListViewController.h; sourceTree = "<group>"; };
+		82634C99159FCAB7002E826C /* DBAchievementListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAchievementListViewController.m; sourceTree = "<group>"; };
+		82634C9A159FCAB7002E826C /* DBAchievementListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBAchievementListViewController.xib; sourceTree = "<group>"; };
 		82728007159F1B1500A76A55 /* morpheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morpheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8272800B159F1B1500A76A55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8272800D159F1B1500A76A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82634C90159FC6B1002E826C /* View Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8297504A159F7DC90009ED89 /* DBViewRepository.h */,
+				8297504B159F7DC90009ED89 /* DBViewRepository.m */,
+				82975050159F84660009ED89 /* UIView+Repository.h */,
+				82975051159F84660009ED89 /* UIView+Repository.m */,
+				8297504D159F82500009ED89 /* DBDeallocHandler.h */,
+				8297504E159F82500009ED89 /* DBDeallocHandler.m */,
+			);
+			name = "View Repository";
+			sourceTree = "<group>";
+		};
+		82634C92159FC6E0002E826C /* File Observer */ = {
+			isa = PBXGroup;
+			children = (
+				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
+				82975046159F45700009ED89 /* DBFileGuard.h */,
+				82975047159F45700009ED89 /* DBFileGuard.m */,
+			);
+			name = "File Observer";
+			sourceTree = "<group>";
+		};
+		82634C9D159FDA0B002E826C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				82634C98159FCAB7002E826C /* DBAchievementListViewController.h */,
+				82634C99159FCAB7002E826C /* DBAchievementListViewController.m */,
+				82634C9A159FCAB7002E826C /* DBAchievementListViewController.xib */,
+				82634C93159FC71E002E826C /* DBLoginViewController.h */,
+				82634C94159FC71E002E826C /* DBLoginViewController.m */,
+				82634C95159FC71E002E826C /* DBLoginViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		82727FFC159F1B1400A76A55 = {
 			isa = PBXGroup;
 			children = (
@@ -93,17 +139,11 @@
 		82728011159F1B1500A76A55 /* morpheus */ = {
 			isa = PBXGroup;
 			children = (
+				82634C90159FC6B1002E826C /* View Repository */,
+				82634C92159FC6E0002E826C /* File Observer */,
+				82634C9D159FDA0B002E826C /* UI */,
 				8272801A159F1B1500A76A55 /* DBAppDelegate.h */,
 				8272801B159F1B1500A76A55 /* DBAppDelegate.m */,
-				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
-				8297504A159F7DC90009ED89 /* DBViewRepository.h */,
-				8297504B159F7DC90009ED89 /* DBViewRepository.m */,
-				8297504D159F82500009ED89 /* DBDeallocHandler.h */,
-				8297504E159F82500009ED89 /* DBDeallocHandler.m */,
-				82975050159F84660009ED89 /* UIView+Repository.h */,
-				82975051159F84660009ED89 /* UIView+Repository.m */,
-				82975046159F45700009ED89 /* DBFileGuard.h */,
-				82975047159F45700009ED89 /* DBFileGuard.m */,
 				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
 				82728012159F1B1500A76A55 /* Supporting Files */,
 			);
@@ -176,6 +216,8 @@
 			files = (
 				82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */,
 				8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */,
+				82634C97159FC71E002E826C /* DBLoginViewController.xib in Resources */,
+				82634C9C159FCAB7002E826C /* DBAchievementListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +264,8 @@
 				8297504C159F7DC90009ED89 /* DBViewRepository.m in Sources */,
 				8297504F159F82500009ED89 /* DBDeallocHandler.m in Sources */,
 				82975052159F84660009ED89 /* UIView+Repository.m in Sources */,
+				82634C96159FC71E002E826C /* DBLoginViewController.m in Sources */,
+				82634C9B159FCAB7002E826C /* DBAchievementListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

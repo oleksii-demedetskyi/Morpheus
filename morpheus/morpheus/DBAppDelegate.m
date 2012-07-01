@@ -7,16 +7,23 @@
 //
 
 #import "DBAppDelegate.h"
+#import "DBLoginViewController.h"
 
 @implementation DBAppDelegate
 
 @synthesize window = _window;
+@synthesize loginController = _loginController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.loginController = [[DBLoginViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController* controller = [[UINavigationController alloc] initWithRootViewController:self.loginController];
+    controller.navigationBarHidden = YES;
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,7 +1,9 @@
 PODS:
+  - ATMHud (0.0.1)
   - DCIntrospect (0.0.1)
   - ParseKit (0.0.2)
 
 DEPENDENCIES:
+  - ATMHud
   - DCIntrospect
   - ParseKit

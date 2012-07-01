@@ -13,3 +13,6 @@ install_resource()
       ;;
   esac
 }
+install_resource 'ATMHud/11-x.png'
+install_resource 'ATMHud/19-check.png'
+install_resource 'ATMHud/pop.wav'
