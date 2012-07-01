@@ -1,21 +1,19 @@
-@start = sentence+ ;
-sentence = selectors '{' ruleset '}' ;
+@start = stylesheet+ ;
+stylesheet = selector '{' rule* '}' ;
 
-selectors = selector commaSelector* ;
-commaSelector = ',' selector ;
+selector = typeSelector | classSelector | idSelector ;
 
-selector = classSelector;
 typeSelector = identifier ;
-classSelector = '.' identifier ;
-idSelector = '#' identifier ;
+classSelector = '.' identifier;
+idSelector = '#' identifier;
 identifier = Word;
 
-ruleset = rule* ;
-rule = property ':' value semi ;
-property = Word ;
-value = string | const;
+rule = keyPath ':' value ';' ;
+keyPath = property ('.' property)* ;
+property = identifier ;
+value = string | const | color | num ;
 
 string = QuotedString;
 const = Word;
-
-semi = ';';
+color = '#' (Word | Number)+ ;
+num = Number;

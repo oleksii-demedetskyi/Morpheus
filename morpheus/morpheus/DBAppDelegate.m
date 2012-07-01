@@ -7,21 +7,28 @@
 //
 
 #import "DBAppDelegate.h"
-#import "DBFileWorker.h"
+#import "DBCSSParser.h"
 
 @implementation DBAppDelegate
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    DBFileWorker* worker = [[DBFileWorker alloc] init];
-    [worker testReadWriteCallbacks];
-    
+{    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    NSString* bundlePath = [[NSBundle mainBundle] pathForResource:@"stylesheets" ofType:@"bundle"];
+    NSBundle* stylesheets = [NSBundle bundleWithPath:bundlePath];
+    
+    NSString* cssPath = [stylesheets pathForResource:@"example" ofType:@"css"];
+    NSString* css = [NSString stringWithContentsOfFile:cssPath
+                                              encoding:NSUTF8StringEncoding
+                                                 error:nil];
+    [[DBCSSParser new] parseStylesheet:css];
+    
     return YES;
 }
 

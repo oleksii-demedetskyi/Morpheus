@@ -15,6 +15,11 @@
 		82728018159F1B1500A76A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82728017159F1B1500A76A55 /* main.m */; };
 		8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8272801B159F1B1500A76A55 /* DBAppDelegate.m */; };
 		82975048159F45700009ED89 /* DBFileGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975047159F45700009ED89 /* DBFileGuard.m */; };
+		8679042F159F82B7009747D3 /* DBCSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8679042E159F82B7009747D3 /* DBCSSParser.m */; };
+		86790431159F82C7009747D3 /* css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = 86790430159F82C7009747D3 /* css.grammar */; };
+		86790434159F8481009747D3 /* DBStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 86790433159F8481009747D3 /* DBStylesheet.m */; };
+		86790437159F848D009747D3 /* DBStylesheetBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 86790436159F848D009747D3 /* DBStylesheetBuilder.m */; };
+		86FE3E14159FCB99001B0480 /* DBStyleApplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */; };
 		D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF3D07A1BB44D29889FE868 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +40,15 @@
 		82975046159F45700009ED89 /* DBFileGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileGuard.h; sourceTree = "<group>"; };
 		82975047159F45700009ED89 /* DBFileGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileGuard.m; sourceTree = "<group>"; };
 		82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBFileGuardWorkspaceConstant.h; sourceTree = "<group>"; };
+		8679042D159F82B7009747D3 /* DBCSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCSSParser.h; sourceTree = "<group>"; };
+		8679042E159F82B7009747D3 /* DBCSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCSSParser.m; sourceTree = "<group>"; };
+		86790430159F82C7009747D3 /* css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css.grammar; sourceTree = "<group>"; };
+		86790432159F8481009747D3 /* DBStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStylesheet.h; sourceTree = "<group>"; };
+		86790433159F8481009747D3 /* DBStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStylesheet.m; sourceTree = "<group>"; };
+		86790435159F848D009747D3 /* DBStylesheetBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStylesheetBuilder.h; sourceTree = "<group>"; };
+		86790436159F848D009747D3 /* DBStylesheetBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStylesheetBuilder.m; sourceTree = "<group>"; };
+		86FE3E12159FCB99001B0480 /* DBStyleApplicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStyleApplicator.h; sourceTree = "<group>"; };
+		86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStyleApplicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 		82727FFC159F1B1400A76A55 = {
 			isa = PBXGroup;
 			children = (
+				8679042B159F8296009747D3 /* css */,
 				82728011159F1B1500A76A55 /* morpheus */,
 				8272800A159F1B1500A76A55 /* Frameworks */,
 				82728008159F1B1500A76A55 /* Products */,
@@ -89,7 +104,6 @@
 				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
 				82975046159F45700009ED89 /* DBFileGuard.h */,
 				82975047159F45700009ED89 /* DBFileGuard.m */,
-				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
 				82728012159F1B1500A76A55 /* Supporting Files */,
 			);
 			path = morpheus;
@@ -104,6 +118,23 @@
 				82728019159F1B1500A76A55 /* morpheus-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8679042B159F8296009747D3 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				8244DAF2159F2CC3001722AD /* stylesheets.bundle */,
+				86790430159F82C7009747D3 /* css.grammar */,
+				8679042D159F82B7009747D3 /* DBCSSParser.h */,
+				8679042E159F82B7009747D3 /* DBCSSParser.m */,
+				86790432159F8481009747D3 /* DBStylesheet.h */,
+				86790433159F8481009747D3 /* DBStylesheet.m */,
+				86790435159F848D009747D3 /* DBStylesheetBuilder.h */,
+				86790436159F848D009747D3 /* DBStylesheetBuilder.m */,
+				86FE3E12159FCB99001B0480 /* DBStyleApplicator.h */,
+				86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */,
+			);
+			path = css;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +192,7 @@
 			files = (
 				82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */,
 				8244DAF3159F2CC3001722AD /* stylesheets.bundle in Resources */,
+				86790431159F82C7009747D3 /* css.grammar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +236,10 @@
 				82728018159F1B1500A76A55 /* main.m in Sources */,
 				8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */,
 				82975048159F45700009ED89 /* DBFileGuard.m in Sources */,
+				8679042F159F82B7009747D3 /* DBCSSParser.m in Sources */,
+				86790434159F8481009747D3 /* DBStylesheet.m in Sources */,
+				86790437159F848D009747D3 /* DBStylesheetBuilder.m in Sources */,
+				86FE3E14159FCB99001B0480 /* DBStyleApplicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
