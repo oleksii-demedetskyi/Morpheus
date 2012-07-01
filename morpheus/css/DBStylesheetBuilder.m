@@ -86,6 +86,7 @@
         [types setObject:@"UITextAlignment" forKey:@"textAlignment"];
         [types setObject:@"UILineBreakMode" forKey:@"lineBreakMode"];
         [types setObject:@"NSInteger" forKey:@"number-of-lines"];
+        [types setObject:@"UIImage" forKey:@"image"];
         
         result = [types copy];
     });
@@ -106,6 +107,7 @@
         [result setObject:NSStringFromSelector(@selector(parse_CGFloat:)) forKey:@"CGFloat"];
         [result setObject:NSStringFromSelector(@selector(parse_UITextAlignment:)) forKey:@"UITextAlignment"];
         [result setObject:NSStringFromSelector(@selector(parse_UILineBreakMode:)) forKey:@"UILineBreakMode"];
+        [result setObject:NSStringFromSelector(@selector(parse_UIImage:)) forKey:@"UIImage"];
         
         methods = [result copy];
     });
@@ -192,6 +194,10 @@
     return nil;
 }
 
+- (UIImage *)parse_UIImage:(NSString *)value
+{
+    return [UIImage imageNamed:value];
+}
 
 - (void)setSelector:(NSString *)selector
 {
