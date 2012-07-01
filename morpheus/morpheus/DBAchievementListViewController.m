@@ -7,16 +7,19 @@
 //
 
 #import "DBAchievementListViewController.h"
+#import "DBAchievementCell.h"
 
 @interface DBAchievementListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *achievementTable;
 @property (nonatomic, strong) NSDictionary* achievements;
+@property (nonatomic, strong) IBOutlet DBAchievementCell* achievementCell;
 
 @end
 
 @implementation DBAchievementListViewController
 @synthesize achievementTable = _achievementTable;
 @synthesize achievements = _achievements;
+@synthesize achievementCell = _achievementCell;
 
 -(NSDictionary *)achievements
 {
@@ -49,6 +52,10 @@
     UIBarButtonItem* addItem = [[UIBarButtonItem alloc] initWithCustomView:addButton];
     
     [self.navigationItem setRightBarButtonItem:addItem animated:YES];
+
+    UILabel* titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 40)];
+    titleLabel.text = @"Achievements List";
+    self.navigationItem.titleView = titleLabel;
 }
 
 - (void)viewDidUnload
@@ -82,14 +89,17 @@
 {
     static NSString* cellIdentifier = @"AchievementCell";
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    DBAchievementCell* cell = (DBAchievementCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        [[NSBundle mainBundle] loadNibNamed:@"DBAchievementCell" owner:self options:nil];
+        cell = self.achievementCell; 
+        self.achievementCell = nil;
     }
 
     NSString* key = [[self.achievements allKeys] objectAtIndex:indexPath.section];
     cell.textLabel.text = [[self.achievements objectForKey:key] objectAtIndex:indexPath.row];
+    
     return cell;
 }
 

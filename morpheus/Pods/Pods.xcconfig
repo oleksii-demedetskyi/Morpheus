@@ -1,4 +1,4 @@
 OTHER_LDFLAGS = -ObjC -all_load -framework QuartzCore -framework AudioToolbox -framework QuartzCore -framework Foundation -framework CoreGraphics -licucore
 ALWAYS_SEARCH_USER_PATHS = YES
-HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/ATMHud" "$(PODS_ROOT)/Headers/DCIntrospect" "$(PODS_ROOT)/Headers/ParseKit"
 PODS_ROOT = $(SRCROOT)/Pods
+HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/ATMHud" "$(PODS_ROOT)/Headers/DCIntrospect" "$(PODS_ROOT)/Headers/ParseKit"
