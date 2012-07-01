@@ -1,5 +1,5 @@
 #logo {
-    image : "logo.png"
+    image : "logo.png";
 }
 
 .input-text {
@@ -8,16 +8,16 @@
     background-color : lightGray;
 }
 
-.input-labe {
+.input-label {
     text-align : right;
 }
 
 #username-label {
-    text : "Username:"
+    text : "Username:";
 }
 
 #password-label {
-    text : "Password:"
+    text : "Password:";
 }
 
 .input-field {
@@ -25,9 +25,9 @@
 }
 
 #password-field {
-    placeholder : "Enter your password..."
+    placeholder : "Enter your password...";
 }
 
 #username-field {
-    placeholder : "Enter username..."
+    placeholder : "Enter username...";
 }

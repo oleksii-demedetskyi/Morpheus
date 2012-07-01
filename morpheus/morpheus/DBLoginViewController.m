@@ -10,6 +10,8 @@
 #import "DBAchievementListViewController.h"
 #import "ATMHud.h"
 
+#import "UIView+Repository.h"
+
 @interface DBLoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoView;
@@ -39,6 +41,25 @@
     
     self.hud = [[ATMHud alloc] initWithDelegate:nil];
     [self.view addSubview:self.hud.view];
+    
+    self.logoView.identifier = @"logo";
+    
+    [self.userNamelabel addClass:@"input-text"];
+    [self.passwordLabel addClass:@"input-text"];
+    [self.userNameTextField addClass:@"input-text"];
+    [self.passwordTextField addClass:@"input-text"];
+    
+    [self.userNamelabel addClass:@"input-label"];
+    [self.passwordLabel addClass:@"input-label"];
+    
+    [self.passwordTextField addClass:@"input-field"];
+    [self.userNameTextField addClass:@"input-field"];
+    
+    self.userNamelabel.identifier = @"username-label";
+    self.passwordLabel.identifier = @"password-label";
+    self.userNameTextField.identifier = @"username-field";
+    self.passwordTextField.identifier = @"password-field";
+    
     // Do any additional setup after loading the view from its nib.
 }
 
