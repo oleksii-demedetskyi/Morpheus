@@ -38,6 +38,29 @@
     return self;
 }
 
+- (NSDictionary*)propertyAliases
+{
+    static NSDictionary* result;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSMutableDictionary* aliases = [NSMutableDictionary dictionary];
+        
+        [aliases setObject:@"layer.borderColor" forKey:@"border-color"];
+        [aliases setObject:@"layer.borderWidth" forKey:@"border-width"];
+        [aliases setObject:@"backgroundColor" forKey:@"background-color"];
+        [aliases setObject:@"layer.cornerRadius" forKey:@"border-radius"];
+        [aliases setObject:@"alpha" forKey:@"opacity"];
+        
+        result = [aliases copy];
+    });
+    
+    return result;
+}
+
+- (NSDictionary*)valueTypes
+{
+}
+
 - (void)setSelector:(NSString *)selector
 {
     self.sheetSelector = selector;
@@ -45,6 +68,12 @@
 
 - (void)addProperty:(NSString *)property withValue:(NSString *)value
 {
+    NSString* alias = [self.propertyAliases objectForKey:property];
+    if (alias != nil) 
+    {
+        property = alias;
+    }
+    // TODO: parse values
     [self.properties setObject:value forKey:property];
 }
 
