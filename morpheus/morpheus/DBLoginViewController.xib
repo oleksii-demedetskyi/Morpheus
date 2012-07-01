@@ -215,7 +215,6 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIViewController" id="827070085">
-				<string key="IBUITitle">Achievement List</string>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">1</int>
@@ -394,19 +393,41 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">DBAchievementListViewController</string>
-					<string key="superclassName">UIViewController</string>
+					<string key="className">DBAchievementCell</string>
+					<string key="superclassName">UITableViewCell</string>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">achievementTable</string>
-						<string key="NS.object.0">UITableView</string>
+						<string key="NS.key.0">typeView</string>
+						<string key="NS.object.0">UIView</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">achievementTable</string>
+						<string key="NS.key.0">typeView</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">typeView</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/DBAchievementCell.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">DBAchievementListViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="achievementCell">DBAchievementCell</string>
+						<string key="achievementTable">UITableView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="achievementCell">
+							<string key="name">achievementCell</string>
+							<string key="candidateClassName">DBAchievementCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="achievementTable">
 							<string key="name">achievementTable</string>
 							<string key="candidateClassName">UITableView</string>
 						</object>
-					</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/DBAchievementListViewController.h</string>

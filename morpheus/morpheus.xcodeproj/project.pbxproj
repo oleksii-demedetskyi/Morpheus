@@ -18,6 +18,8 @@
 		82728016159F1B1500A76A55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82728014159F1B1500A76A55 /* InfoPlist.strings */; };
 		82728018159F1B1500A76A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82728017159F1B1500A76A55 /* main.m */; };
 		8272801C159F1B1500A76A55 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8272801B159F1B1500A76A55 /* DBAppDelegate.m */; };
+		827435C715A0289900506E9B /* DBAchievementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 827435C615A0289900506E9B /* DBAchievementCell.m */; };
+		827435CA15A028CA00506E9B /* DBAchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827435C915A028CA00506E9B /* DBAchievementCell.xib */; };
 		82975048159F45700009ED89 /* DBFileGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82975047159F45700009ED89 /* DBFileGuard.m */; };
 		8297504C159F7DC90009ED89 /* DBViewRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297504B159F7DC90009ED89 /* DBViewRepository.m */; };
 		8297504F159F82500009ED89 /* DBDeallocHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297504E159F82500009ED89 /* DBDeallocHandler.m */; };
@@ -50,9 +52,18 @@
 		82728019159F1B1500A76A55 /* morpheus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "morpheus-Prefix.pch"; sourceTree = "<group>"; };
 		8272801A159F1B1500A76A55 /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
 		8272801B159F1B1500A76A55 /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
+		827435C515A0289900506E9B /* DBAchievementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAchievementCell.h; sourceTree = "<group>"; };
+		827435C615A0289900506E9B /* DBAchievementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAchievementCell.m; sourceTree = "<group>"; };
+		827435C915A028CA00506E9B /* DBAchievementCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBAchievementCell.xib; sourceTree = "<group>"; };
 		82975046159F45700009ED89 /* DBFileGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileGuard.h; sourceTree = "<group>"; };
 		82975047159F45700009ED89 /* DBFileGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileGuard.m; sourceTree = "<group>"; };
 		82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBFileGuardWorkspaceConstant.h; sourceTree = "<group>"; };
+		8297504A159F7DC90009ED89 /* DBViewRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewRepository.h; sourceTree = "<group>"; };
+		8297504B159F7DC90009ED89 /* DBViewRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewRepository.m; sourceTree = "<group>"; };
+		8297504D159F82500009ED89 /* DBDeallocHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDeallocHandler.h; sourceTree = "<group>"; };
+		8297504E159F82500009ED89 /* DBDeallocHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDeallocHandler.m; sourceTree = "<group>"; };
+		82975050159F84660009ED89 /* UIView+Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Repository.h"; sourceTree = "<group>"; };
+		82975051159F84660009ED89 /* UIView+Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Repository.m"; sourceTree = "<group>"; };
 		8679042D159F82B7009747D3 /* DBCSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCSSParser.h; sourceTree = "<group>"; };
 		8679042E159F82B7009747D3 /* DBCSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCSSParser.m; sourceTree = "<group>"; };
 		86790430159F82C7009747D3 /* css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css.grammar; sourceTree = "<group>"; };
@@ -62,12 +73,6 @@
 		86790436159F848D009747D3 /* DBStylesheetBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStylesheetBuilder.m; sourceTree = "<group>"; };
 		86FE3E12159FCB99001B0480 /* DBStyleApplicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStyleApplicator.h; sourceTree = "<group>"; };
 		86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStyleApplicator.m; sourceTree = "<group>"; };
-		8297504A159F7DC90009ED89 /* DBViewRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewRepository.h; sourceTree = "<group>"; };
-		8297504B159F7DC90009ED89 /* DBViewRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewRepository.m; sourceTree = "<group>"; };
-		8297504D159F82500009ED89 /* DBDeallocHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDeallocHandler.h; sourceTree = "<group>"; };
-		8297504E159F82500009ED89 /* DBDeallocHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDeallocHandler.m; sourceTree = "<group>"; };
-		82975050159F84660009ED89 /* UIView+Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Repository.h"; sourceTree = "<group>"; };
-		82975051159F84660009ED89 /* UIView+Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Repository.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 		82634C9D159FDA0B002E826C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				827435C515A0289900506E9B /* DBAchievementCell.h */,
+				827435C615A0289900506E9B /* DBAchievementCell.m */,
+				827435C915A028CA00506E9B /* DBAchievementCell.xib */,
 				82634C98159FCAB7002E826C /* DBAchievementListViewController.h */,
 				82634C99159FCAB7002E826C /* DBAchievementListViewController.m */,
 				82634C9A159FCAB7002E826C /* DBAchievementListViewController.xib */,
@@ -254,6 +262,7 @@
 				86790431159F82C7009747D3 /* css.grammar in Resources */,
 				82634C97159FC71E002E826C /* DBLoginViewController.xib in Resources */,
 				82634C9C159FCAB7002E826C /* DBAchievementListViewController.xib in Resources */,
+				827435CA15A028CA00506E9B /* DBAchievementCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +315,7 @@
 				86790434159F8481009747D3 /* DBStylesheet.m in Sources */,
 				86790437159F848D009747D3 /* DBStylesheetBuilder.m in Sources */,
 				86FE3E14159FCB99001B0480 /* DBStyleApplicator.m in Sources */,
+				827435C715A0289900506E9B /* DBAchievementCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

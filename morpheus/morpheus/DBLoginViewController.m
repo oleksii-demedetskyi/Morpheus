@@ -8,6 +8,7 @@
 
 #import "DBLoginViewController.h"
 #import "DBAchievementListViewController.h"
+#import "ATMHud.h"
 
 @interface DBLoginViewController ()
 
@@ -18,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet DBAchievementListViewController *achievementListController;
+@property (strong, nonatomic) ATMHud* hud;
 
 @end
 
@@ -29,10 +31,14 @@
 @synthesize passwordTextField;
 @synthesize loginButton;
 @synthesize achievementListController;
+@synthesize hud;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.hud = [[ATMHud alloc] initWithDelegate:nil];
+    [self.view addSubview:self.hud.view];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -62,7 +68,16 @@
 
 - (IBAction)loginButtonTouched:(id)sender 
 {
-    [self.navigationController pushViewController:self.achievementListController animated:YES];
+    [self.hud setCaption:@"Logging in..."];
+    [self.hud setActivity:YES];
+    [self.hud show];
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
+    {
+        [self.hud hide];
+        [self.navigationController pushViewController:self.achievementListController animated:YES];
+    });
 }
 
 @end
