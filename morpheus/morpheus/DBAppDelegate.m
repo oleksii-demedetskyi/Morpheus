@@ -9,6 +9,7 @@
 #import "DBAppDelegate.h"
 #import "DBLoginViewController.h"
 #import "DBCSSCore.h"
+#import "DCIntrospect.h"
 
 @implementation DBAppDelegate
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
     [[DBCSSCore sharedCore] start];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -29,6 +31,7 @@
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     
+    [[DCIntrospect sharedIntrospector]start];
     return YES;
 }
 

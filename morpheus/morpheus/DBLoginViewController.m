@@ -39,9 +39,9 @@
 {
     [super viewDidLoad];
     
-    self.hud = [[ATMHud alloc] initWithDelegate:nil];
-    [self.view addSubview:self.hud.view];
-    
+//    self.hud = [[ATMHud alloc] initWithDelegate:nil];
+//    [self.view addSubview:self.hud.view];
+//    
     self.logoView.identifier = @"logo";
     
     [self.userNamelabel addClass:@"input-text"];
@@ -89,16 +89,16 @@
 
 - (IBAction)loginButtonTouched:(id)sender 
 {
-    [self.hud setCaption:@"Logging in..."];
-    [self.hud setActivity:YES];
-    [self.hud show];
-    double delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
-    {
-        [self.hud hide];
-        [self.navigationController pushViewController:self.achievementListController animated:YES];
-    });
+//    [self.hud setCaption:@"Logging in..."];
+//    [self.hud setActivity:YES];
+//    [self.hud show];
+//    double delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
+//    {
+//        [self.hud hide];
+//        [self.navigationController pushViewController:self.achievementListController animated:YES];
+//    });
 }
 
 @end

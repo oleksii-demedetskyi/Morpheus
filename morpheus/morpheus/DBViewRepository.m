@@ -45,6 +45,8 @@
 
 -(NSMutableSet*)weakSet
 {
+    return [NSMutableSet set];
+    
     CFSetCallBacks callbacks = {0, NULL, NULL, CFCopyDescription, CFEqual, CFHash};
     return (__bridge NSMutableSet*)(CFSetCreateMutable(0, 0, &callbacks));
 }

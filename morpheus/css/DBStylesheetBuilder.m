@@ -196,7 +196,9 @@
 
 - (UIImage *)parse_UIImage:(NSString *)value
 {
-    return [UIImage imageNamed:value];
+    value = [value stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+    UIImage* image = [UIImage imageNamed:value];
+    return image;
 }
 
 - (void)setSelector:(NSString *)selector
@@ -221,7 +223,10 @@
         value = [self performSelector:selector withObject:value];
     }
     
-    [self.properties setObject:value forKey:property];
+    if (value != nil)
+    {
+        [self.properties setObject:value forKey:property];
+    }
 }
 
 - (DBStylesheet*) build;
