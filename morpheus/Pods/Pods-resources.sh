@@ -16,3 +16,4 @@ install_resource()
 install_resource 'ATMHud/11-x.png'
 install_resource 'ATMHud/19-check.png'
 install_resource 'ATMHud/pop.wav'
+install_resource 'SSToolkit/Assets'
