@@ -9,6 +9,8 @@
 #import "DBStylesheetBuilder.h"
 #import "DBStylesheet.h"
 
+#import "UIColor+SSToolkitAdditions.h"
+
 @interface DBStylesheetBuilder ()<NSCopying>
 
 @property (nonatomic, strong) NSString* sheetSelector;
@@ -65,10 +67,10 @@
         NSMutableDictionary* types = [NSMutableDictionary dictionary];
         
         [types setObject:@"CGColor" forKey:@"layer.borderColor"];
-        [types setObject:@"NSNumber" forKey:@"layer.borderWidth"];
+        [types setObject:@"NSInterger" forKey:@"layer.borderWidth"];
         [types setObject:@"UIColor" forKey:@"backgroundColor"];
-        [types setObject:@"NSNumber" forKey:@"layer.cornerRadius"];
-        [types setObject:@"NSNumber" forKey:@"alpha"];
+        [types setObject:@"CGFloat" forKey:@"layer.cornerRadius"];
+        [types setObject:@"CGFloat" forKey:@"alpha"];
         
         result = [types copy];
     });
@@ -85,7 +87,8 @@
         
         [result setObject:NSStringFromSelector(@selector(parse_CGColor:)) forKey:@"CGColor"];
         [result setObject:NSStringFromSelector(@selector(parse_UIColor:)) forKey:@"UIColor"];
-        [result setObject:NSStringFromSelector(@selector(parse_NSNumber:)) forKey:@"NSNumber"];
+        [result setObject:NSStringFromSelector(@selector(parse_NSNumber:)) forKey:@"NSInteger"];
+        [result setObject:NSStringFromSelector(@selector(parse_CGFloat)) forKey:@"CGFloat"];
         
         methods = [result copy];
     });
@@ -100,12 +103,21 @@
 
 - (UIColor*)parse_UIColor:(NSString*)value
 {
-    
+    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@Color",value]);
+    id colorClass = (id)[UIColor class];
+    if ([colorClass respondsToSelector:selector])
+    {
+        return [colorClass performSelector:selector];
+    }
+
+    UIColor* color = [UIColor colorWithHex:value];
+    NSAssert(color != nil, @"Cannot parse color");
+    return color;
 }
 
--(NSNumber*)parse_NSNumber:(NSString*)value
+-(NSNumber*)parse_NSInteger:(NSString*)value
 {
-    
+    return [NSNumber numberWithInt:[value integerValue]];
 }
 
 - (void)setSelector:(NSString *)selector
