@@ -8,7 +8,6 @@
 
 #import "DBAppDelegate.h"
 #import "DBLoginViewController.h"
-#import "DBCSSParser.h"
 #import "DBCSSCore.h"
 
 @implementation DBAppDelegate
@@ -28,7 +27,7 @@
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     
-    [DBCSSCore new];
+    [[DBCSSCore sharedCore] start];
     
     return YES;
 }
