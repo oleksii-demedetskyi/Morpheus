@@ -51,6 +51,7 @@
 - (void)start
 {
     [self updateStylesFromBundle:self.styleBundle];
+    [self.viewRepository addListener:self];
 }
 
 - (void)viewRepositoryDidAddView:(NSNotification*)n
@@ -106,7 +107,6 @@
 
 - (void)updateStylesFromBundle:(NSBundle*)bundle
 {
-    // Import 
     [self.styleCache resetCache];
     NSArray* paths = [bundle pathsForResourcesOfType:@"css" inDirectory:nil];
     for (NSString* cssPath in paths) 
