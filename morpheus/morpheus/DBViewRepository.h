@@ -11,8 +11,13 @@
 @interface DBViewRepository : NSObject
 
 +(id)sharedRepository;
+
 -(void)addView:(UIView *)view;
 -(void)removeView:(UIView *)view;
 -(void)removeView:(UIView *)view fromClass:(NSString *)aClass;
+
+- (NSSet*)viewsForClass:(NSString*)clazz;
+- (NSSet*)viewsForType:(NSString*)type;
+- (NSSet*)viewsForIdentifier:(NSString*)identifier;
 
 @end

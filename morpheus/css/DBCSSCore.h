@@ -1,5 +1,5 @@
 //
-//  DBStyleApplicator.h
+//  DBCSSCore.h
 //  morpheus
 //
 //  Created by Andrey Moskvin on 01.07.12.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class DBStylesheet;
-@interface DBStyleApplicator : NSObject
-
-- (void)applyStyle:(DBStylesheet*)style toView:(UIView*)view;
+@interface DBCSSCore : NSObject
 
 @end

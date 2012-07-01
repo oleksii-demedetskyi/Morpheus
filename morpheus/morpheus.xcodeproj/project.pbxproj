@@ -29,6 +29,8 @@
 		86790434159F8481009747D3 /* DBStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 86790433159F8481009747D3 /* DBStylesheet.m */; };
 		86790437159F848D009747D3 /* DBStylesheetBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 86790436159F848D009747D3 /* DBStylesheetBuilder.m */; };
 		86FE3E14159FCB99001B0480 /* DBStyleApplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */; };
+		86FE3E2A15A0177D001B0480 /* DBCSSCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FE3E2915A0177D001B0480 /* DBCSSCore.m */; };
+		86FE3E2E15A01CAD001B0480 /* DBCSSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FE3E2D15A01CAD001B0480 /* DBCSSCache.m */; };
 		D0947E97FDC34F7ABD053483 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF3D07A1BB44D29889FE868 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,10 @@
 		86790436159F848D009747D3 /* DBStylesheetBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStylesheetBuilder.m; sourceTree = "<group>"; };
 		86FE3E12159FCB99001B0480 /* DBStyleApplicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStyleApplicator.h; sourceTree = "<group>"; };
 		86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStyleApplicator.m; sourceTree = "<group>"; };
+		86FE3E2815A0177D001B0480 /* DBCSSCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCSSCore.h; sourceTree = "<group>"; };
+		86FE3E2915A0177D001B0480 /* DBCSSCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCSSCore.m; sourceTree = "<group>"; };
+		86FE3E2C15A01CAD001B0480 /* DBCSSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCSSCache.h; sourceTree = "<group>"; };
+		86FE3E2D15A01CAD001B0480 /* DBCSSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCSSCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,10 @@
 				86790436159F848D009747D3 /* DBStylesheetBuilder.m */,
 				86FE3E12159FCB99001B0480 /* DBStyleApplicator.h */,
 				86FE3E13159FCB99001B0480 /* DBStyleApplicator.m */,
+				86FE3E2815A0177D001B0480 /* DBCSSCore.h */,
+				86FE3E2915A0177D001B0480 /* DBCSSCore.m */,
+				86FE3E2C15A01CAD001B0480 /* DBCSSCache.h */,
+				86FE3E2D15A01CAD001B0480 /* DBCSSCache.m */,
 			);
 			path = css;
 			sourceTree = "<group>";
@@ -316,6 +326,8 @@
 				86790437159F848D009747D3 /* DBStylesheetBuilder.m in Sources */,
 				86FE3E14159FCB99001B0480 /* DBStyleApplicator.m in Sources */,
 				827435C715A0289900506E9B /* DBAchievementCell.m in Sources */,
+				86FE3E2A15A0177D001B0480 /* DBCSSCore.m in Sources */,
+				86FE3E2E15A01CAD001B0480 /* DBCSSCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
