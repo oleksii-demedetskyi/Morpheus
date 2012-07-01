@@ -23,6 +23,7 @@
     {
         _selector = selector;
         _properties = properties;
+        _selectorType = type;
     }
     
     return self;

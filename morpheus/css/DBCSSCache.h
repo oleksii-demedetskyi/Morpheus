@@ -14,6 +14,8 @@
 - (void)importStyleshhets:(NSArray*)stylesheets;
 
 - (NSSet*)allStyles;
+
+- (NSSet*)stylesForClasses:(NSSet*)classes;
 - (NSSet*)stylesForClass:(NSString*)clazz;
 - (NSSet*)stylesForType:(NSString*)type;
 - (NSSet*)stylesForIdentifier:(NSString*)identifier;

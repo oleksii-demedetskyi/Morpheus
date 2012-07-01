@@ -55,6 +55,22 @@
     [self.viewRepository addListener:self];
 }
 
+- (void)viewRepositoryDidAddView:(NSNotification*)n
+{
+    UIView* view = [n.userInfo objectForKey:@"view"];
+    
+    NSMutableSet* styles = [NSMutableSet set];
+    
+    [styles unionSet:[self.styleCache stylesForClasses:view.classes]];
+    [styles unionSet:[self.styleCache stylesForIdentifier:view.identifier]];
+    [styles unionSet:[self.styleCache stylesForType:NSStringFromClass(view.class)]];
+
+    for (DBStylesheet* style in styles) 
+    {
+        [self.applicator applyStyle:style toView:view];
+    }
+}
+
 - (id)init
 {
     self = [super init];

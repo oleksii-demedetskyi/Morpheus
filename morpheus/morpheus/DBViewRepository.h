@@ -20,4 +20,6 @@
 - (NSSet*)viewsForType:(NSString*)type;
 - (NSSet*)viewsForIdentifier:(NSString*)identifier;
 
+- (void)addListener:(id)listener;
+
 @end

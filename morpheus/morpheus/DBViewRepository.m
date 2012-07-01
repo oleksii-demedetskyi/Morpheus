@@ -32,6 +32,8 @@
     dispatch_once(&onceToken, ^{
         repository = [[DBViewRepository alloc] init];
         repository.typeCollection = [NSMutableDictionary dictionary];
+        repository.classesCollection = [NSMutableDictionary dictionary];
+        repository.identifierCollection = [NSMutableDictionary dictionary];
     });
     return repository;
 }
@@ -120,7 +122,25 @@ void Swizzle(Class c, SEL orig, SEL new)
         [view onDealloc:^(UIView *view) {
             [[DBViewRepository sharedRepository] removeView:view];
         }];
-    }    
+    }
+    
+    [self didAddView:view];
+}
+
+- (void)didAddView:(UIView*)view
+{
+    NSDictionary* userinfo = [NSDictionary dictionaryWithObject:view forKey:@"view"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"didAddView" 
+                                                        object:self 
+                                                      userInfo:userinfo];
+}
+
+- (void)addListener:(id)listener
+{
+    [[NSNotificationCenter defaultCenter] addObserver:listener 
+                                             selector:@selector(viewRepositoryDidAddView:) 
+                                                 name:@"didAddView" 
+                                               object:self];
 }
 
 -(void)removeView:(UIView *)view

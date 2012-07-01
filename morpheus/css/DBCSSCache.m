@@ -65,6 +65,17 @@
     return [self stylesForSelector:type type:DBCSSSelectorType_Type];
 }
 
+- (NSSet*)stylesForClasses:(NSSet *)classes
+{
+    NSMutableSet* set = [NSMutableSet set];
+    for (NSString* class in classes)
+    {
+        [set unionSet:[self stylesForClass:class]];
+    }
+    
+    return [set copy];
+}
+
 - (NSSet *)allStyles
 {
     return [self.styles copy];

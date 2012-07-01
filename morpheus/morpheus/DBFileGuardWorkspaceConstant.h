@@ -9,6 +9,6 @@
 #ifndef morpheus_DBFileGuardWorkspaceConstant_h
 #define morpheus_DBFileGuardWorkspaceConstant_h
 
-#define kDB_WORKSPACE_DEFAULT_PATH_KEY @"/Users/moskvin/Hakaton/Morpheus/morpheus/stylesheets.bundle"
+#define kDB_WORKSPACE_DEFAULT_PATH_KEY @"/Users/andrey_moskvin/Development/MyProjects/Morpheus/morpheus/stylesheets.bundle"
 
 #endif
