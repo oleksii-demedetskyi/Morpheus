@@ -1,3 +1,5 @@
 UILabel {
     text : 123;
+    layer.borderWidth : 2;
+    layer.cornerRadius : 8;
 }

@@ -43,8 +43,8 @@
 - (NSArray*)parseStylesheet:(NSString*)stylesheet
 {
     self.result = [NSMutableArray array];
-    
-    id tokens = [self.parser parse:stylesheet];
+        
+    [self.parser parse:stylesheet];
     
     NSArray* result = [self.result copy];
     self.result = nil;
