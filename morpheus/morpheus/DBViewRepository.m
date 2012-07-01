@@ -144,4 +144,20 @@ void Swizzle(Class c, SEL orig, SEL new)
     [classViews removeObject:view];
 }
 
+
+- (NSSet *)viewsForClass:(NSString *)clazz
+{
+    return [[self.classesCollection objectForKey:clazz] copy];
+}
+
+- (NSSet *)viewsForType:(NSString *)type
+{
+    return [[self.typeCollection objectForKey:type] copy];
+}
+
+- (NSSet *)viewsForIdentifier:(NSString *)identifier
+{
+    return [[self.identifierCollection objectForKey:identifier] copy];
+}
+
 @end
