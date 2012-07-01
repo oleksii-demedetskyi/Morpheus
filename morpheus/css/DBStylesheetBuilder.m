@@ -215,7 +215,6 @@
         value = [self performSelector:selector withObject:value];
     }
     
-    // TODO: parse values
     [self.properties setObject:value forKey:property];
 }
 

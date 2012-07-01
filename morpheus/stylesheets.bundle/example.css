@@ -1,5 +1,33 @@
-UILabel {
-    text : 123;
-    border-width : 2;
-    border-radius : 8;
+#logo {
+    image : "logo.png"
+}
+
+.input-text {
+    border-radius : 5;
+    border-color : darkGray;
+    background-color : lightGray;
+}
+
+.input-labe {
+    text-align : right;
+}
+
+#username-label {
+    text : "Username:"
+}
+
+#password-label {
+    text : "Password:"
+}
+
+.input-field {
+    text-align : left;
+}
+
+#password-field {
+    placeholder : "Enter your password..."
+}
+
+#username-field {
+    placeholder : "Enter username..."
 }
