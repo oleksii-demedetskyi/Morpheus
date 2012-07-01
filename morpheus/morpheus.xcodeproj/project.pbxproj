@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		1BF3D07A1BB44D29889FE868 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDF157089D748C39F564C0F /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = stylesheets.bundle; path = /Users/moskvin/Hakaton/Morpheus/morpheus/stylesheets.bundle; sourceTree = "<absolute>"; };
+		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = stylesheets.bundle; path = ../stylesheets.bundle; sourceTree = "<group>"; };
 		82634C93159FC71E002E826C /* DBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoginViewController.h; sourceTree = "<group>"; };
 		82634C94159FC71E002E826C /* DBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoginViewController.m; sourceTree = "<group>"; };
 		82634C95159FC71E002E826C /* DBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBLoginViewController.xib; sourceTree = "<group>"; };
