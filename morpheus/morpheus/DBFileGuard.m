@@ -34,6 +34,7 @@
     if (self) 
     {
         self.bundlePath = aBundlePath;
+        [self startTracking];
     }
     return self;
 }
@@ -79,13 +80,13 @@ static void KQCallback(CFFileDescriptorRef kqRef, CFOptionFlags callBackTypes, v
     [obj kqueueFired];
 }
 
--(void)testReadWriteCallbacks
+-(void)startTracking
 {
     int                     dirFD;
     int                     kq;
     int                     retVal;
     struct kevent           eventToAdd;
-    CFFileDescriptorContext context = { 0, (__bridge void *)self, NULL, NULL, NULL };
+    CFFileDescriptorContext context = { 0, (__bridge_retained void *)self, NULL, NULL, NULL };
     CFRunLoopSourceRef      rls;
     
     dirFD = open([self.bundlePath fileSystemRepresentation], O_EVTONLY);
