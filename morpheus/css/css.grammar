@@ -1,0 +1,19 @@
+@start = stylesheet+ ;
+stylesheet = selector '{' rule* '}' ;
+
+selector = typeSelector | classSelector | idSelector ;
+
+typeSelector = identifier ;
+classSelector = '.' identifier;
+idSelector = '#' identifier;
+identifier = Word;
+
+rule = keyPath ':' value ';' ;
+keyPath = property ('.' property)* ;
+property = identifier ;
+value = string | const | color | num ;
+
+string = QuotedString;
+const = Word;
+color = '#' (Word | Number)+ ;
+num = Number;
