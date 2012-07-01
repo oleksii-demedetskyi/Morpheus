@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8227DA3615A05C4800ABD8F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8227DA3515A05C4800ABD8F9 /* logo.png */; };
 		82634C96159FC71E002E826C /* DBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82634C94159FC71E002E826C /* DBLoginViewController.m */; };
 		82634C97159FC71E002E826C /* DBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82634C95159FC71E002E826C /* DBLoginViewController.xib */; };
 		82634C9B159FCAB7002E826C /* DBAchievementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82634C99159FCAB7002E826C /* DBAchievementListViewController.m */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		1BF3D07A1BB44D29889FE868 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDF157089D748C39F564C0F /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8227DA3515A05C4800ABD8F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		8244DAF2159F2CC3001722AD /* stylesheets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = stylesheets.bundle; path = ../stylesheets.bundle; sourceTree = "<group>"; };
 		82634C93159FC71E002E826C /* DBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoginViewController.h; sourceTree = "<group>"; };
 		82634C94159FC71E002E826C /* DBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoginViewController.m; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				82975049159F49C40009ED89 /* DBFileGuardWorkspaceConstant.h */,
 				82975046159F45700009ED89 /* DBFileGuard.h */,
 				82975047159F45700009ED89 /* DBFileGuard.m */,
+				8227DA3515A05C4800ABD8F9 /* logo.png */,
 				82728012159F1B1500A76A55 /* Supporting Files */,
 			);
 			path = morpheus;
@@ -270,6 +273,7 @@
 				82634C97159FC71E002E826C /* DBLoginViewController.xib in Resources */,
 				82634C9C159FCAB7002E826C /* DBAchievementListViewController.xib in Resources */,
 				827435CA15A028CA00506E9B /* DBAchievementCell.xib in Resources */,
+				8227DA3615A05C4800ABD8F9 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
