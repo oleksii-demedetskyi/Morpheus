@@ -10,4 +10,7 @@
 
 @interface DBCSSCore : NSObject
 
++(DBCSSCore*)sharedCore;
+- (void)start;
+
 @end

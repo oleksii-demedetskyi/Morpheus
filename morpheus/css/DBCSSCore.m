@@ -15,6 +15,8 @@
 #import "DBFileGuard.h"
 #import "DBFileGuardWorkspaceConstant.h"
 
+#import "UIView+Repository.h"
+
 @interface DBCSSCore ()
 
 @property (nonatomic, readonly) DBViewRepository* viewRepository;
@@ -36,6 +38,23 @@
 @synthesize guard = _guard;
 @synthesize styleBundle = _styleBundle;
 
++ (id)sharedCore
+{
+    static DBCSSCore* core;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        core = [DBCSSCore new];
+    });
+    
+    return core;
+}
+
+- (void)start
+{
+    [self updateStylesFromBundle:self.styleBundle];
+    [self.viewRepository addListener:self];
+}
+
 - (id)init
 {
     self = [super init];
@@ -46,9 +65,6 @@
         _parser = [DBCSSParser new];
         _applicator = [DBStyleApplicator new];
         _styleBundle = [self selectBundle];
-        
-        [self updateStylesFromBundle:self.styleBundle];
-                                      
     }
     return self;
 }
