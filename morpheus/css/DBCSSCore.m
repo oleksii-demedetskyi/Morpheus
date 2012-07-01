@@ -15,7 +15,7 @@
 #import "DBFileGuard.h"
 #import "DBFileGuardWorkspaceConstant.h"
 
-@interface DBCSSCore ()
+@interface DBCSSCore () <DBFileGuardProtocol>
 
 @property (nonatomic, readonly) DBViewRepository* viewRepository;
 @property (nonatomic, readonly) DBCSSCache* styleCache;
@@ -47,8 +47,7 @@
         _applicator = [DBStyleApplicator new];
         _styleBundle = [self selectBundle];
         
-        [self updateStylesFromBundle:self.styleBundle];
-                                      
+        [self updateStylesFromBundle:self.styleBundle];                           
     }
     return self;
 }
@@ -60,6 +59,7 @@
     {
         result = [NSBundle bundleWithPath:kDB_WORKSPACE_DEFAULT_PATH_KEY];
         _guard = [DBFileGuard fileGuardWithBundlePath:kDB_WORKSPACE_DEFAULT_PATH_KEY];
+        _guard.delegate = self;
     }
     else 
     {
@@ -119,6 +119,13 @@
     {
         [self.applicator applyStyle:style toView:view];
     }
+}
+
+#pragma mark - DBFileGuardProtocol
+
+-(void)fileGuardDidChangedFileInBundle:(DBFileGuard *)fileGuard
+{
+    [self updateStylesFromBundle:self.styleBundle];
 }
 
 @end
